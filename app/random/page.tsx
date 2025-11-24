@@ -88,7 +88,7 @@ export default async function RandomPage() {
 
                     <Grid container spacing={2}>
                         {ingredients.map((ing, idx) => (
-                            <Grid item xs={12} sm={6} md={3} key={idx}>
+                            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={idx}>
                                 <Box sx={{
                                     p: 2,
                                     bgcolor: '#f9fafb',

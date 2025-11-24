@@ -67,7 +67,7 @@ export default async function Home() {
 
         <Grid container spacing={4} alignItems="stretch">
           {featured.map((meal: any) => (
-            <Grid item xs={12} md={4} key={meal.idMeal} sx={{ display: 'flex', mx: 'auto' }}>
+            <Grid size={{ xs: 12, md: 4 }} key={meal.idMeal} sx={{ display: 'flex', mx: 'auto' }}>
               <Link href={`/recipe/${meal.idMeal}`} style={{ textDecoration: 'none', width: '100%', display: 'flex' }}>
                 <Box sx={{
                   width: '100%',

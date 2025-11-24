@@ -86,7 +86,7 @@ export default function RecipeSearch() {
 
                     <Grid container spacing={3}>
                         {recipes.map((meal: any) => (
-                            <Grid item xs={12} sm={6} key={meal.idMeal}>
+                            <Grid size={{ xs: 12, md: 6 }} key={meal.idMeal}>
                                 <Link href={`/recipe/${meal.idMeal}`} style={{ textDecoration: 'none' }}>
                                     <Box sx={{
                                         display: 'flex',

@@ -60,7 +60,7 @@ export default function AboutPage() {
                     spacing={8}
                     alignItems="center"
                 >
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
                         <Box
                             sx={{
                                 position: "relative",
@@ -78,7 +78,7 @@ export default function AboutPage() {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid size={{ xs: 12, md: 6 }}>
                         <Typography
                             variant="h3"
                             sx={{
@@ -144,7 +144,7 @@ export default function AboutPage() {
                             desc: "Discover flavors you've never tasted before.",
                         },
                     ].map((item, idx) => (
-                        <Grid item xs={12} md={4} key={idx}>
+                        <Grid size={{ xs: 12, md: 4 }} key={idx}>
                             <Paper
                                 elevation={0}
                                 sx={{
