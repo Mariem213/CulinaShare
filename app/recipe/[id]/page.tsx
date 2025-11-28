@@ -7,7 +7,6 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Image from 'next/image';
 
-// Fetch specific meal by ID
 async function getRecipe(id: string) {
     if (!id) return { meals: null };
     const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);

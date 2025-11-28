@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { Container, Box, Typography, Grid, Paper, Divider } from '@mui/material';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';

@@ -4,6 +4,7 @@ import { Playfair_Display, Lato } from 'next/font/google';
 import Navbar from './components/Navbar';
 import { Box, Typography } from '@mui/material';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+import { getSession } from '@/lib/auth';
 
 const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -21,18 +22,28 @@ const lato = Lato({
 export const metadata: Metadata = {
     title: 'CulinaShare | Gourmet Recipes',
     description: 'Elevate your home cooking.',
+    icons: {
+        icon: '/icon.svg',
+        shortcut: '/icon.svg',
+        apple: '/icon.svg',
+    },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
+    const session = await getSession();
+
     return (
         <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
-            <body suppressHydrationWarning style={{ margin: 0, padding: 0, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+            <body
+                suppressHydrationWarning={true}
+                style={{ margin: 0, padding: 0, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
+            >
                 <AppRouterCacheProvider>
-                    <Navbar />
+                    <Navbar session={session} />
 
                     <main style={{ flexGrow: 1, fontFamily: 'var(--font-lato)' }}>
                         {children}

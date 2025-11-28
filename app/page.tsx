@@ -24,7 +24,7 @@ export default async function Home() {
         bgcolor: '#111827',
         color: 'white',
         py: { xs: 8, md: 16 },
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1543353071-087f9a7f3098?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url("")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         mb: 8
