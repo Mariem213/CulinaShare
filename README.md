@@ -64,7 +64,7 @@ Key highlights:
 
 ## Live Demo
 
-> 🚧 **Deployment URL:** `https://culinashare-ten.vercel.app/` *(update with your actual URL)*
+> 🚧 **Deployment URL:** `https://culinashare-ten.vercel.app/`
 
 ---
 
